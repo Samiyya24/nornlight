@@ -15,7 +15,7 @@ const toggleSidebar = () => {
 </script>
 
 <template>
-  <div class="container mb-16">
+  <div class="container md:mb-16">
     <div class="md:flex hidden items-center justify-between py-3 text-sm">
       <nav>
         <ul class="flex gap-7 text-primary/50 font-semibold">
@@ -41,9 +41,10 @@ const toggleSidebar = () => {
         <img
           @click="toggleSidebar"
           class="md:hidden"
-          src="/burger.svg"
+          :src="showSidebar ? '/close.svg' : '/burger.svg'"
           alt=""
         />
+
         <img v-if="showInput" class="max-md:w-40" src="/logo.svg" alt="" />
       </div>
       <nuxt-link
@@ -78,7 +79,7 @@ const toggleSidebar = () => {
       </div>
     </div>
 
-    <form action="" class="relative mt-5 block md:hidden" v-if="showInput">
+    <form action="" class="relative mt-5 block md:hidden">
       <input
         class="border py-3 rounded-full border-primary outline-none px-6 pr-12 w-[378px]"
         type="text"
@@ -88,9 +89,9 @@ const toggleSidebar = () => {
       />
       <img class="absolute right-5 top-4" src="/search.svg" alt="" />
     </form>
-    <div v-if="showSidebar" class="modal_mobile">
+    <div v-if="showSidebar" @click="toggleSidebar" class="modal_mobile mt-10">
       <div
-        class="justify-between py-3 text-sm z-50 fixed bg-white top-20 w-full"
+        class="justify-between py-3 text-sm z-50 fixed bg-white top-14 w-full"
         v-if="showSidebar"
       >
         <nav>
@@ -119,7 +120,7 @@ const toggleSidebar = () => {
         </nav>
         <nuxt-link
           to="/katalog"
-          class="bg-primary py-3 items-center px-40 mt-7 flex rounded-full text-white gap-2"
+          class="bg-primary py-3 items-center px-40 mt-7 flex rounded-full text-white gap-2 w-[370px] mx-auto"
           ><img src="/catalog.svg" alt="icon" />Каталог</nuxt-link
         >
         <div class="flex flex-col items-center gap-3 mt-8">

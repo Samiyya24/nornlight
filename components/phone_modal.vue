@@ -32,11 +32,13 @@ const handleSubmit = async () => {
     class="w-full h-full bg-primary/10 fixed top-0 z-10"
     @click="closeModal"
   ></div>
-  <div class="container relative max-w-[800px] bg-white p-16 z-20">
+  <div
+    class="container relative max-w-[390px] md:max-w-[800px] bg-white p-16 z-20 rounded-[50px]"
+  >
     <button class="absolute right-6 top-6 font-bold" @click="closeModal">
-      X
+      <img src="/public/close.svg" alt="" />
     </button>
-    <h1 class="text-6xl font-bold mb-14">
+    <h1 class="md:text-6xl text-3xl font-bold mb-14">
       Заполните,<br />
       и мы перезвоним
     </h1>
