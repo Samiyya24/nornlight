@@ -39,9 +39,13 @@ const toggleSidebar = () => {
           >
         </li>
         <li>
-          <nuxt-link class="hover:text-primary" to="">Контакты</nuxt-link>
+          <nuxt-link class="hover:text-primary" to="/Contact"
+            >Контакты</nuxt-link
+          >
         </li>
-        <li><nuxt-link class="hover:text-primary" to="/blog">Блог</nuxt-link></li>
+        <li>
+          <nuxt-link class="hover:text-primary" to="/blog">Блог</nuxt-link>
+        </li>
       </ul>
     </nav>
     <div class="flex gap-6">
