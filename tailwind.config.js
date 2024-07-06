@@ -7,7 +7,8 @@ export default {
       colors: {
         'primary': '#454545'
       },
-    }
+    },
+    
   },
 
 }

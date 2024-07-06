@@ -33,7 +33,7 @@ const handleSubmit = async () => {
     @click="closeModal"
   ></div>
   <div
-    class="container relative max-w-[390px] md:max-w-[800px] bg-white p-16 z-20 rounded-[50px]"
+    class="container relative max-w-[390px] md:max-w-[800px] bg-white md:p-16 max-md:p-8 border border-primary z-20 rounded-[30px]"
   >
     <button class="absolute right-6 top-6 font-bold" @click="closeModal">
       <img src="/public/close.svg" alt="" />

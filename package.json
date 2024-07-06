@@ -10,14 +10,23 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@mdi/font": "^7.4.47",
+    "@nuxt/http": "^0.6.4",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/vuetify": "^1.12.3",
     "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "flowbite": "^2.4.1",
     "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
     "nuxt": "^3.12.2",
     "swiper": "^11.1.4",
     "vue": "latest",
-    "vue3-carousel-nuxt": "^1.1.2"
+    "vue3-carousel-nuxt": "^1.1.2",
+    "vuetify": "^3.6.0-beta.0.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.0",
