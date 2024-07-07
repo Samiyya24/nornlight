@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue';
+import PhoneModal from '../components/Home/phone_modal.vue';
+
 const showModal = ref(false);
 const showInput = ref(true);
 const showSidebar = ref(false);
@@ -157,7 +160,8 @@ const toggleSidebar = () => {
       <nuxt-link
         to=""
         class="bg-primary py-3 items-center px-40 mt-7 flex rounded-full text-white gap-2 w-[370px] mx-auto"
-        ><img src="/catalog.svg" alt="icon" />Каталог</nuxt-link
+      >
+        <img src="/catalog.svg" alt="icon" />Каталог</nuxt-link
       >
       <div class="flex flex-col items-center gap-3 mt-8">
         <a class="text-primary text-sm" href="tel:+8 (800) 890-46-56"

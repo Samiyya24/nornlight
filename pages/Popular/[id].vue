@@ -42,14 +42,20 @@ const info = ref([
 </script>
 
 <template>
-  <div class="container md:mt-12">
+  <div class="container mt-12">
     <div>
       <nuxt-link class="text-primary/50" to="/">Главная ></nuxt-link>
     </div>
     <div class="mt-12">
-      <div v-if="product" class="flex gap-14">
+      <div v-if="product" class="md:flex gap-14">
         <img class="w-1/2" :src="product.photo" alt="Product image" />
-        <div class="w-1/2">
+        <div class="flex items-center gap-[10px] mt-3">
+          <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
+          <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
+          <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
+          <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
+        </div>
+        <div class="md:w-1/2">
           <h1 class="text-[40px] text-primary">{{ product.title }}</h1>
           <div class="flex items-center justify-between mt-10">
             <div>
@@ -138,7 +144,7 @@ const info = ref([
             <p class="text-[40px] font-medium text-[#101010]">
               {{ product.price }}₽
             </p>
-            <p class="text-lg text-primary/50 font-medium">
+            <p class="text-lg text-[#B3B3B3] line-through font-medium">
               {{ product.discountPercentage }}₽
             </p>
           </div>
@@ -151,7 +157,9 @@ const info = ref([
             <div class="border p-4 flex gap-8 rounded-xl font-medium">
               <button>-</button><span>0</span><button>+</button>
             </div>
-            <button class="py-4 px-[50px] bg-primary text-white rounded-xl">
+            <button
+              class="max-md:hidden py-4 px-[50px] bg-primary text-white rounded-xl"
+            >
               В корзину
             </button>
             <img
