@@ -20,6 +20,8 @@ onMounted(async () => {
   }
 });
 
+const counter = ref(0);
+
 const info = ref([
   {
     color: "Жёлтый",
@@ -49,7 +51,7 @@ const info = ref([
     <div class="mt-12">
       <div v-if="product" class="md:flex gap-14">
         <img class="w-1/2" :src="product.photo" alt="Product image" />
-        <div class="flex items-center gap-[10px] mt-3">
+        <div class="max-md:flex hidden items-center gap-[10px] mt-3">
           <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
           <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
           <img class="max-w-[80px]" :src="product.photo" alt="Product image" />
@@ -155,8 +157,11 @@ const info = ref([
           </p>
           <div class="flex items-center gap-4 mt-12">
             <div class="border p-4 flex gap-8 rounded-xl font-medium">
-              <button>-</button><span>0</span><button>+</button>
+              <button @click="counter > 0 ? counter-- : counter">-</button>
+              <span class="px-3">{{ counter }}</span>
+              <button @click="counter++">+</button>
             </div>
+
             <button
               class="max-md:hidden py-4 px-[50px] bg-primary text-white rounded-xl"
             >
@@ -174,6 +179,9 @@ const info = ref([
         <p>Loading...</p>
       </div>
     </div>
+    <h2 class="text-[40px] text-primary font-medium md:mt-44 mt-7">
+      Характеристика
+    </h2>
     <div v-for="item in info" :key="item.id">
       <div class="flex md:gap-[400px] items-center justify-between py-6 px-7">
         <p class="w-1/2">Цвет</p>

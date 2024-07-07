@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import PhoneModal from '../components/Home/phone_modal.vue';
+import { ref } from "vue";
+import PhoneModal from "../components/Home/phone_modal.vue";
 
 const showModal = ref(false);
 const showInput = ref(true);
@@ -29,7 +29,7 @@ const toggleSidebar = () => {
           >
         </li>
         <li>
-          <nuxt-link class="hover:text-primary" to=""
+          <nuxt-link class="hover:text-primary" to="/Oplata"
             >Доставка и оплата</nuxt-link
           >
         </li>
@@ -141,7 +141,7 @@ const toggleSidebar = () => {
             <nuxt-link to="/aboutcompany">О компании</nuxt-link>
           </li>
           <li class="cursor-pointer border-b py-4 w-full text-center">
-            <nuxt-link to="/">Доставка и оплата</nuxt-link>
+            <nuxt-link to="/oplata">Доставка и оплата</nuxt-link>
           </li>
           <li class="cursor-pointer border-b py-4 w-full text-center">
             <nuxt-link to="/return">Возврат</nuxt-link>
@@ -150,7 +150,7 @@ const toggleSidebar = () => {
             <nuxt-link to="/Warranty">Гарантии</nuxt-link>
           </li>
           <li class="cursor-pointer border-b py-4 w-full text-center">
-            <nuxt-link to="/">Контакты</nuxt-link>
+            <nuxt-link to="/contact">Контакты</nuxt-link>
           </li>
           <li class="cursor-pointer border-b py-4 w-full text-center">
             <nuxt-link to="/blog">Блог</nuxt-link>
