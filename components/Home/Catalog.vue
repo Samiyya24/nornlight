@@ -45,7 +45,8 @@ const products = reactive([
       <nuxt-link
         to="/catalog"
         class="btn btn-one hidden md:flex items-center rounded-full gap-[10px] py-4 px-12"
-        ><span>Весь каталог</span> <img src="/right.svg" alt="" />
+      >
+        <span>Весь каталог</span> <img src="/right.svg" alt="" />
       </nuxt-link>
     </div>
     <div class="hidden md:grid md:grid-cols-3 gap-5">

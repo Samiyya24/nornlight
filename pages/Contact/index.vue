@@ -5,7 +5,7 @@
       <nuxt-link class="text-primary/50" to="/">Главная</nuxt-link> >
       <nuxt-link to="/Contact">Контакты</nuxt-link>
     </div>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center md:mb-[53px] justify-between">
       <h1 class="text-[64px] font-bold text-primary">Контакты</h1>
       <div class="flex flex-col">
         <a class="text-2xl font-semibold text-primary" href="tel:+8(800)8904656"

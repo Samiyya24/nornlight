@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import HomePopularProduct from '~/components/Home/PopularProduct.vue';
+
+</script>
 <template>
   <HomeCarousel />
   <HomeCatalog />
